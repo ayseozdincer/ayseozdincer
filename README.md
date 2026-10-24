@@ -2,14 +2,12 @@
 
 Software engineer in Los Angeles. I build ML-backed products end to end: generation and data pipelines, model evaluation, cloud infrastructure, and the product on top. One of them is in production with brand clients and the other is pre-launch.
 
-Both live in private repositories, so this page describes what's in them. I'm happy to walk through the code in an interview.
-
 ---
 
 ## Bernardo: AI imagery production platform
-**Sole engineer · private repo · Jun 2026 – present · in production for [Daphni](https://daphni.ai)**
+**Sole engineer · private repo · in production for [Daphni](https://daphni.ai)**
 
-Bernardo runs production for Daphni, an AI imagery studio for fashion brands. Brands upload garment photos, and the platform turns them into e-commerce imagery that moves through generation, retouching, QA and client approval. I built it end to end and operate it in production: 300+ commits and almost 80 releases.
+Bernardo runs production for Daphni, an AI imagery studio for fashion brands. Brands upload garment photos, and the platform turns them into e-commerce imagery that moves through generation, retouching, QA and client approval. 
 
 **What's in the repo**
 
@@ -29,11 +27,9 @@ Bernardo runs production for Daphni, an AI imagery studio for fashion brands. Br
 ---
 
 ## d-mia: AI personal stylist
-**Founder and sole engineer · private repo · Oct 2026 – present · [d-mia.com](https://www.d-mia.com)**
+**Founder and sole engineer · private repo · [d-mia.com](https://www.d-mia.com)**
 
 An AI personal stylist that learns each shopper's taste and builds outfits around it. I designed and built everything in the repo: backend, infrastructure, data pipelines, model evaluation and the site.
-
-**Live today:** messaging integration in production with test users, landing page and waitlist at d-mia.com, a ~10,000-product catalog from 10 retailers, and an image-extraction pipeline running over it.
 
 **What's in the repo**
 
@@ -50,22 +46,7 @@ An AI personal stylist that learns each shopper's taste and builds outfits aroun
 - **Data model (Postgres + pgvector, design).** Content deduplicated by perceptual hash; user actions stored as events that point at shared content; every derived row tagged with the model, prompt and schema version that produced it, so any step can be rerun without re-fetching. User deletion and media-retention rules are part of the design from day one.
 - **Site (HTML/CSS, AWS Amplify).** Hand-built static site with self-hosted fonts and no build step, deployed on every push.
 
-50+ offline unit tests across the Python pipelines, plus tests for the Lambda handlers.
-
-<sub>The recommendation approach stays private until launch. Happy to discuss it in an interview.</sub>
 
 ---
-
-## How I build
-
-- **Secure and private by default.** Signed webhooks, server-enforced access rules, least-privilege roles, no long-lived credentials in CI, a private database, and model providers that don't retain data.
-- **Measure before choosing.** Models and QA checkers are benchmarked against labeled data and cost per unit before one is picked.
-- **Reproducible pipelines.** Inputs are kept and derived data is versioned, so changing a model means rerunning one step, not starting over.
-
-## Background
-
-Previously an engineer at Finesse, working on automation, social media tooling and internal infrastructure. That work included an AI product-shot generation and design-versioning dashboard, and Instagram/TikTok data-collection pipelines in Python.
-
-**Stack:** TypeScript · Python · Next.js / React · Node.js · Postgres (Drizzle, pgvector) · AWS (ECS, RDS, S3, CloudFront, Lambda, DynamoDB, IAM, Amplify) · Docker · GitHub Actions · image-generation, vision-language and embedding models
 
 <!-- Contact: add your LinkedIn and/or email here -->
