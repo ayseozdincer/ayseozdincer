@@ -49,24 +49,4 @@ An AI personal stylist that learns each shopper's taste and builds outfits aroun
 
 ---
 
-## Smaller projects
-
-**Ghost product-shot dashboard** · private repo · the prototype that became Bernardo\
-*Next.js 16, TypeScript, Prisma, SQLite, Gemini image models*
-
-A versioning tool for AI e-commerce product shots. Designers attach inspiration, fit and detail photos, generate a first shot, then iterate version by version with notes and extra reference images.
-
-- Asynchronous generation: requests return immediately and the client polls. Retries back off differently for safety blocks, rate limits and other errors.
-- Bulk intake: pick a folder, drag photos into labeled roles, and reference specific images inline in the prompt notes.
-- HMAC-signed cookie auth, a path-traversal guard on image serving, and lossless HEIC-to-WebP conversion before generation.
-
-**Social media scraper and top-posts dashboard** · private repo · built at a previous job\
-*Python, Celery, Ray, SQLAlchemy, Postgres, Streamlit*
-
-- Service-based scraping of Instagram and TikTok posts, comments, engagement metrics and account info, run by distributed workers.
-- Daily scraping stats and error alerts posted to Slack, with centralized logging.
-- A Streamlit dashboard of top posts with custom sort metrics and follower tiers, deployed to Streamlit Cloud.
-
----
-
 <!-- Contact: add your LinkedIn and/or email here -->
