@@ -11,12 +11,5 @@ Bernardo runs production for Daphni, an AI imagery studio for fashion brands. Br
 
 ---
 
-## d-mia: AI personal stylist
-**Founder and sole engineer · private repo · [d-mia.com](https://www.d-mia.com)**
-
-An AI personal stylist that learns each shopper's taste and builds outfits around it. I designed and built everything in the repo: backend, infrastructure, data pipelines, model evaluation and the site.
-
-
----
 
 <!-- Contact: add your LinkedIn and/or email here -->
